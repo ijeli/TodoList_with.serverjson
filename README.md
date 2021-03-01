@@ -1,5 +1,8 @@
 # TodoTest
 
+Todo Tasks are stored in a todos.json found in ./src/assets/data.
+Please copy and run 'json-server -w todos.json' to launch the localhost:3000/todos
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
 ## Development server
