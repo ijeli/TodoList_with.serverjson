@@ -33,7 +33,6 @@ export class TodoListInteractionService {
   }
 
   updateToDoListItem(updateData: ToDo) {
-    console.log(updateData)
     return this.http.put(this._url+(updateData.id), updateData)
       .toPromise()
   }

@@ -64,7 +64,6 @@ export class TodoListComponent implements OnInit {
 
     this._todoListsInteractionService.postToDoListItem(postPackage).then(() => {
       this.updateTodo();
-      console.log(this.updateTodo())
     })
 
     this.inputTodo = '';
