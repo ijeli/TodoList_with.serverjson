@@ -81,8 +81,8 @@ export class TodoListComponent implements OnInit {
   updateTodo() {
     this._todoListsInteractionService.getTodoListItems().subscribe(update => {
       this.allTodos = update
-      let x = update.filter(data => data.completed === false)
-      this.todos = x
+      let filteredTodos = update.filter(data => data.completed === false)
+      this.todos = filteredTodos
     })
     return this.todos;
     // this.todos$ = this._todoListsInteractionService.getTodoListItems();
