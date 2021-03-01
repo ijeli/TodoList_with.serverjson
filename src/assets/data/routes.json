@@ -1,0 +1,4 @@
+{
+    "/todos": "http://localhost:3000/todos/",
+    "/todos/post": "http://localhost:3000/todos/"
+  }

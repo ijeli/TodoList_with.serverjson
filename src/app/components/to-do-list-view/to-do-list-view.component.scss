@@ -1,0 +1,32 @@
+@import '../../../scss/vars';
+
+.taskItem {
+    border-radius: 25px;   
+    display: flex;
+    min-height: 20px;
+    padding: 10px;
+    margin: 10px;
+    flex-direction: row;
+    background-color: $box-background-color;
+
+    
+    .id {
+        flex: 10%;
+        padding-left: 10px;
+    };
+
+    .content {
+        flex: 85%;
+    };
+
+
+}
+
+.taskItem.done .content {
+    text-decoration: line-through;
+}
+
+.done {
+    color: greenyellow;
+}
+

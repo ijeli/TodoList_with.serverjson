@@ -1,0 +1,10 @@
+@import './vars';
+
+body {
+    background-color: $background-color;
+    color: $font-color;
+}
+
+.flexContainer {
+    display: flex;
+}

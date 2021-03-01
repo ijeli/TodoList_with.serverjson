@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "Task #1",
+      "edit": false,
+      "completed": false
+    },
+    {
+      "id": 2,
+      "content": "Task #2",
+      "edit": false,
+      "completed": false
+    },
+    {
+      "id": 3,
+      "content": "Task #3",
+      "edit": false,
+      "completed": false
+    },
+    {
+      "content": "enter value",
+      "edit": false,
+      "completed": false,
+      "id": 4
+    }
+  ]
+}

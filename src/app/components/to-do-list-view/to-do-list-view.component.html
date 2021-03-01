@@ -1,0 +1,8 @@
+<div id="todoListView" *ngIf="isLoggedin" style="margin-bottom: 100px;">
+    <div *ngIf="todos$ | async as todos">
+        <div class="taskItem {{ (todo.completed ? 'done' : '') }}" *ngFor="let todo of todos; let i = index;">
+            <div class="id">#{{i+1}}</div>
+            <div class="content" (click)="toggleTodo(i)">{{todo.content}}</div>
+        </div>
+    </div>
+</div>

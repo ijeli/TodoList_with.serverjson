@@ -1,0 +1,25 @@
+@import '../../../scss/vars';
+
+.buttonPretty {
+    background-color: $header-footer-background-color;
+    color: $font-color;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.loginBox {
+    border:solid; 
+    margin: 10px; 
+    border-radius: 25px; 
+    padding: 50px; 
+    text-align: center;
+    background-color: $box-background-color;
+    flex: 100%;
+    align-self:center;
+}
+
+div {
+    flex-direction: column;
+}

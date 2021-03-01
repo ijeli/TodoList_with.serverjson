@@ -1,0 +1,53 @@
+@import '../../../scss/vars';
+
+.taskItem {
+    border-radius: 25px;    
+    display: flex;
+    min-height: 20px;
+    padding: 10px;
+    margin: 10px;
+    flex-direction: row;
+    background-color: $box-background-color;
+
+    input {
+        width: 90%;
+        background-color: $background-color-input;
+        color: $font-color;
+        border-radius: 25px;
+    }
+}
+
+.id {
+    flex: 10%;
+    padding-left: 10px;
+};
+
+.content {
+    flex: 85%;
+};
+
+.content:hover{
+    cursor: default;
+    color: $text-hover-color;
+};
+
+input[name="inputTodo"] {
+    background-color: $background-color-input;
+    color: $font-color;
+    width: 75%;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 10%;
+    min-height: 20px;
+    flex: 50%;
+}
+
+.buttonPretty {
+    background-color: $header-footer-background-color;
+    color: $font-color;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+

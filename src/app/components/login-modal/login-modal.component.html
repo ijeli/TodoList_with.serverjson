@@ -1,0 +1,28 @@
+<div class="flexContainer">
+    <div *ngIf="!loggedIn" class="loginBox">
+        <form (submit)="loginAdmin()">
+            <div>
+                Username: 
+                <input
+                    type="text"
+                    name="inputUsername"
+                    placeholder="Admin"
+                    [(ngModel)]="inputUsername"
+                />
+            </div>
+            <br>
+            <div>
+                Password: 
+                <input
+                    type="password"
+                    name="inputPassword"
+                    placeholder="********"
+                    [(ngModel)]="inputPassword"
+                />
+            </div>
+            <br> 
+            <input class="buttonPretty" type="submit" value="Login"/>
+        </form>
+    </div>
+    <br>
+</div>

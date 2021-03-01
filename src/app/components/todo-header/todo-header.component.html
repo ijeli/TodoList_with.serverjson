@@ -1,0 +1,15 @@
+<header>
+    <img src="../../../assets/img/taskIcon.png"/>
+    <h3>
+        <a routerLink="/">ToDo List</a>
+    </h3>
+    <a *ngIf="isLoggedin" routerLink="/taskListView">View List</a>
+    <a *ngIf="isLoggedin" routerLink="/taskListEdit">Edit List</a>
+    <a *ngIf="isLoggedin" routerLink="" (click)="logOutBuddy()">Logout</a>
+</header> 
+
+<div style="text-align: center;">
+    <h1 *ngIf="!isLoggedin">Please Login User</h1>
+    <h1 *ngIf="isLoggedin">{{displayMessage | async }}</h1>
+
+</div>

@@ -1,0 +1,32 @@
+<div id="todoListEdit" *ngIf="isLoggedin" style="margin-bottom: 100px;">
+    <div *ngIf="viewEdit" class="flex-container">
+        <form (submit)="addTodo()" class="flex-container">
+            <input
+                type="text"
+                name="inputTodo"
+                placeholder="...Enter task..."
+                [(ngModel)]="inputTodo"
+            />
+            <input class="buttonPretty" type="submit" value="+Add"/>
+            
+        </form>        
+    </div>
+
+    <h5 style="text-align: center;">Double Click Task to Edit</h5>
+
+    <div>
+        <div class="taskItem" *ngFor="let todo of todos; let i = index;"(dblclick)="toggleEditTodo(todo);" >
+            <div id="todoId{{todo.id}}" class="id">#{{i+1}}</div>
+            <div *ngIf="!todo.edit;" class="content" >{{todo.content}}</div>
+            <input 
+                *ngIf="todo.edit;" 
+                name="inputEditTodo"
+                type="text" 
+                [(ngModel)]="todo.content"
+            />
+            <button *ngIf="!todo.edit;" class="buttonPretty" (click)="completeTodoItem(todo)"> Complete </button>
+            <button *ngIf="todo.edit;" class="buttonPretty" (click)="updateTodoItem(todo)"> Update </button>
+            <button *ngIf="todo.edit;" class="buttonPretty" (click)="deleteTodo(todo.id)"> Delete </button>
+        </div>
+    </div>   
+</div>

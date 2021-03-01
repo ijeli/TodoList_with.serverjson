@@ -1,0 +1,33 @@
+@import '../../../scss/vars';
+
+header{
+    top:0px;
+    background-color:$header-footer-background-color;
+    padding: 5px;
+    display: flex;
+
+}
+
+
+h3 {
+    flex: 80%;
+    padding-left: 10px;
+    color: $font-color;
+}
+
+a {
+    text-decoration: $no-decoraters;
+    flex: 15%;
+    margin: 5px;
+    align-self: center;
+    color: $font-color;
+    font-weight: bold;
+}
+
+h3:hover {
+    color: #03dac6
+}
+
+a:hover {
+    color: #03dac6
+}
