@@ -1,7 +1,14 @@
-# TodoTest
+# How to setup
 
 Todo Tasks are stored in a todos.json found in ./src/assets/data.
-Please copy and run 'json-server -w todos.json' to launch the localhost:3000/todos
+Please copy and run in a seperate local folder: 
+
+    npm install json-server
+    json-server -w todos.json
+
+This will allow you to preform CRUD actions off of `http://localhost:3000/todos`
+
+## TodoTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
