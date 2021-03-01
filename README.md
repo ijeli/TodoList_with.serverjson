@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to setup
 
-Todo Tasks are stored in a todos.json found in ./src/assets/data.
-Please copy and run in a seperate local folder: 
+Todo Tasks are stored in a `todos.json` found in `./src/assets/data.`
+Please copy `todos.json` and run in a seperate local folder: 
 
     npm install json-server
     json-server -w todos.json
